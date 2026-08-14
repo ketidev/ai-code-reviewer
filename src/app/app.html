@@ -1,0 +1,15 @@
+<div class="container">
+  <h1>Angular AI Code reviewer</h1>
+  <textarea [(ngModel)]="codeSnippet" placeholder="Paste your Angular code here..."></textarea>
+  <div class="output-card">
+    @if (reviewResources.isLoading()) {
+      <div>AI is analysing the code with a reviewer...</div>
+    } @else {
+      <div class="review-text">{{ reviewResources.value() }}</div>
+    }
+
+    @if (reviewResources.error()) {
+      <p class="error">Error connecting to Gemini API</p>
+    }
+  </div>
+</div>
