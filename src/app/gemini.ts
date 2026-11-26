@@ -10,9 +10,9 @@ export class Gemini {
 
   private model = this.genAI.getGenerativeModel({
     model: 'gemini-2.5-flash',
-    systemInstruction: `You are a senior Angular 19 expect.
+    systemInstruction: `You are a senior Angular 21 expert.
     Review code specifically for:
-    - Signal usege (prefer signals over RXJS where applicable)
+    - Signal usage (prefer signals over RXJS where applicable)
     - Standalone component pattern
     - Control flow syntax (@if, @for)
     - Performance and security

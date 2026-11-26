@@ -1,59 +1,69 @@
-# AiCodeReviewer
+# AI Code Reviewer
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.4.
+An AI-powered code review tool built with Angular and Google Gemini API. It analyzes Angular code and provides actionable recommendations based on modern Angular development best practices.
 
-## Development server
+## 🚀 Project Overview
 
-To start a local development server, run:
+AI Code Reviewer uses Google's Gemini AI to review Angular code and identify potential improvements. It focuses on modern Angular patterns, code quality, performance and security.
 
-```bash
-ng serve
-```
+Users can submit code and receive AI-generated feedback with concise explanations and practical suggestions.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## ✨ Key Features
 
-## Code scaffolding
+- **AI-Powered Code Review** – Analyzes code using Google Gemini API.
+- **Angular Best Practices** – Reviews code based on modern Angular development standards.
+- **Signal Usage** – Recommends Angular Signals over RxJS where appropriate.
+- **Standalone Components** – Checks standalone component patterns.
+- **Modern Control Flow** – Reviews usage of `@if` and `@for` syntax.
+- **Performance & Security** – Identifies potential performance and security improvements.
+- **Actionable Feedback** – Provides concise recommendations for code improvement.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## 🛠️ Tech Stack
 
-```bash
-ng generate component component-name
-```
+- Angular
+- TypeScript
+- Google Gemini API
+- @google/generative-ai
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## ⚙️ Getting Started
 
-```bash
-ng generate --help
-```
+1. Clone the repository:
 
-## Building
+   ```bash
+   git clone https://github.com/ketidev/ai-code-reviewer.git
+   ```
 
-To build the project run:
+2. Install dependencies:
 
-```bash
-ng build
-```
+   ```bash
+   npm install
+   ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+3. Configure your Gemini API key in the environment configuration:
 
-## Running unit tests
+   ```typescript
+   export const environment = {
+     GEMINI_API_KEY: 'YOUR_GEMINI_API_KEY',
+   };
+   ```
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+4. Start the development server:
 
-```bash
-ng test
-```
+   ```bash
+   ng serve
+   ```
 
-## Running end-to-end tests
+5. Open `http://localhost:4200/` in your browser.
 
-For end-to-end (e2e) testing, run:
+## 🤖 AI Integration
 
-```bash
-ng e2e
-```
+The application integrates Google's Gemini 2.5 Flash model to analyze submitted code using a custom system instruction focused on Angular 21 best practices.
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+The AI generates structured feedback covering code quality, modern Angular patterns, performance and security.
 
-## Additional Resources
+## 📌 Future Improvements
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- Support for multiple programming languages.
+- Code quality scoring.
+- Highlighting issues directly in the submitted code.
+- Exporting code review reports.
