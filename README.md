@@ -60,10 +60,3 @@ Users can submit code and receive AI-generated feedback with concise explanation
 The application integrates Google's Gemini 2.5 Flash model to analyze submitted code using a custom system instruction focused on Angular 21 best practices.
 
 The AI generates structured feedback covering code quality, modern Angular patterns, performance and security.
-
-## 📌 Future Improvements
-
-- Support for multiple programming languages.
-- Code quality scoring.
-- Highlighting issues directly in the submitted code.
-- Exporting code review reports.
